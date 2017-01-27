@@ -2,8 +2,8 @@
 add_executable(minimal minimal.cpp)
 target_link_libraries(minimal ei eibase ${Allegro_LIBRARIES} m)
 
-# add_executable(frame frame.cpp)
-# target_link_libraries(frame ei eibase ${Allegro_LIBRARIES} m)
+add_executable(frame frame.cpp)
+target_link_libraries(frame ei eibase ${Allegro_LIBRARIES} m)
 
 # add_executable(button button.cpp)
 # target_link_libraries(button ei eibase ${Allegro_LIBRARIES} m)
