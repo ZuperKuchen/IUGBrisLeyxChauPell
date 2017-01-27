@@ -3,15 +3,13 @@
 
 #include "ei_eventmanager.h"
 #include "hw_interface.h"
+#include "ei_application.h"
 
 #include <allegro5/allegro5.h>
 #include <allegro5/allegro_primitives.h>
 
-
-
-
-
-Application(Size* main_window_size, bool_t fullscreen){
+namespace ei {
+Application::Application(Size* main_window_size, bool_t fullscreen){
 
     hw_init();         //initialisation
 
@@ -20,7 +18,7 @@ Application(Size* main_window_size, bool_t fullscreen){
    // A COMPLETER
 }
 
-Application(){
+Application::~Application(){
 
     hw_quit();
 }
@@ -43,3 +41,4 @@ Frame* root_widget();
 surface_t root_surface();
 
 
+}
